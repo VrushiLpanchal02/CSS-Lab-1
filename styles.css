@@ -105,3 +105,45 @@ header {
     background-color: var(--secondary);
     color: var(--white);
 }
+.hero {
+    min-height: 60vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 6rem 1rem 4rem;
+    color: var(--white);
+    background-image:
+        linear-gradient(var(--overlay), var(--overlay)),
+        url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    font-size: clamp(2.25rem, 4vw + 1rem, 4.25rem);
+    margin: 0 0 0.5rem;
+    color: var(--white);
+}
+
+.hero p {
+    max-width: 62ch;
+    margin: 0 auto 1.25rem;
+    color: var(--white);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.85rem 1.15rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    background-color: var(--accent);
+    color: var(--text);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e09a00;
+    transform: translateY(-2px);
+}
